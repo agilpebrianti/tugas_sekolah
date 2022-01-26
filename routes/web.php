@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BiodataController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/biodata', function () {
     return view('welcome');
 });
- 
+
 Route::get('biodata', function () {
     $data=[
         'nama'=>'Agil Pebrianti',
@@ -32,3 +33,9 @@ Route::get('biodata', function () {
 return view('biodata',$data);
 
 });
+
+route::get('/bio', [HomeController::class, 'index']);
+route::get('/list', [BiodataController::class, 'index']);
+route::get('/add_siswa', [BiodataController::class, 'create']);
+
+route::get('/post', [PostController::class, 'index']);
