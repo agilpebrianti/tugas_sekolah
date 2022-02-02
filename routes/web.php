@@ -35,7 +35,13 @@ return view('biodata',$data);
 });
 
 route::get('/bio', [HomeController::class, 'index']);
-route::get('/list', [BiodataController::class, 'index']);
-route::get('/add_siswa', [BiodataController::class, 'create']);
+route::get('/add_siswa', [BiodataController::class, 'create'])->name('add_siswa');
 
-route::get('/post', [PostController::class, 'index']);
+
+route::get('/list', [BiodataController::class, 'index'])->name('list');
+Route::get('/form_siswa', [BiodataController::class, 'create'])->name('form_siswa');
+Route::post('/store_siswa', [BiodataController::class, 'store'])->name('store_siswa');
+Route::get('/edit/{id}', [BiodataController::class, 'edit'])->name('edit_siswa');
+Route::put('/update/{id}', [BiodataController::class, 'update'])->name('update_siswa');
+Route::get('/bio/{id}', [BiodataController::class, 'show'])->name('show_bio');
+Route::delete('/delete/{id}', [BiodataController::class, 'destroy'])->name('destroy_siswa');
