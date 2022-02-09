@@ -107,15 +107,15 @@
                       </div>
                       <div class="form-group col-md-6">
                         <label for="inputAddress">Pendidikan SMP</label>
-                        <input type="text" class="form-control" id="SMP" placeholder="Asal SMP" name="SMP">
+                        <input type="text" class="form-control" id="smp" placeholder="Asal SMP" name="smp">
                       </div>
                       <div class="form-group col-md-6">
                         <label for="inputAddress">Pendidikan SMA</label>
-                        <input type="text" class="form-control" id="SMA" placeholder="Asal SMA" name="SMA">
+                        <input type="text" class="form-control" id="sma" placeholder="Asal SMA" name="sma">
                       </div>
                       <div class="form-group col-md-6">
                         <label for="inputAddress">Pendidikan Universitas</label>
-                        <input type="text" class="form-control" id="Universitas" placeholder="Asal Universitas" name="Universitas">
+                        <input type="text" class="form-control" id="universitas" placeholder="Asal Universitas" name="universitas">
                       </div>
                         <button type="submit" class="btn btn-primary" >Tambah Data</button>
                   </form>

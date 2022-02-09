@@ -98,16 +98,18 @@
             <div class="list-group">
                 <div class="list-group-item list-group-item-action">
                   <h5 class="mb-1">{{ $bio->smp }}</h5>
+                  <p class="mb-1">Nope</p>
+                  <small>2016-2019</small>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                  <h5 class="mb-1">{{ $bio->sma }}</h5>
                   <p class="mb-1">Rekayasa Perangkat Lunak</p>
                   <small>2019-2022</small>
                 </div>
                 <div class="list-group-item list-group-item-action">
-                  <h5 class="mb-1">{{ $bio->sma }}</h5>
-                  <small>2016-2019</small>
-                </div>
-                <div class="list-group-item list-group-item-action">
                   <h5 class="mb-1">{{ $bio->universitas }}</h5>
-                  <small>2010-2016</small>
+                  <p class="mb-1">Ilmu Komunikasi</p>
+                  <small>2022-2026</small>
                 </div>
           </div>
         </div>

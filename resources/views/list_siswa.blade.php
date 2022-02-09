@@ -89,7 +89,7 @@
                             <td>{{ $siswa->hoby }}</td>
                             <td>{{ $siswa->telp }}</td>
                             <td>{{ $siswa->email }}</td>
-                            <td>
+
                                 <td><form method="POST" action="{{ route('destroy_siswa',$siswa->id) }}">
                                     <a button type="button" class="btn btn-warning" href="{{ route('edit_siswa',$siswa->id) }}">Edit</button></a>
                                         @csrf
